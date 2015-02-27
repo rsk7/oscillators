@@ -1,12 +1,13 @@
 /* global require */
+
 require.config({
     paths: {
-        jquery: 'lib/jquery',
-        underscore: 'lib/underscore',
-        backbone: 'lib/backbone',
-        text: 'lib/text'
+        jquery: "lib/jquery",
+        underscore: "lib/underscore",
+        backbone: "lib/backbone",
+        text: "lib/text"
     },
-    
+
     shim: {
         backbone: {
             deps: ["underscore", "jquery"],
@@ -19,7 +20,8 @@ require.config({
 });
 
 require([
-  'app',
+    "app"
 ], function(App){
-  App.initialize();
+    "use strict";
+    App.initialize();
 });
